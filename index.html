@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>June8LLC</title>
+<meta name="description" content="June8LLC builds small, focused software for Android. Maker of Cover Screen Trackpad.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230D1117'/><text x='32' y='43' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='700' fill='%233DDCFF' text-anchor='middle'>J8</text></svg>">
+<style>
+  /*
+    Single page, so the styling lives here rather than in a file of its own.
+    Palette is shared with covertrackpad.com — see brand-kit.md. The accent
+    swaps by theme because #3DDCFF cannot carry white text (1.63:1); light mode
+    uses the deepened teal instead.
+  */
+  :root {
+    --surface: #FFFFFF; --raised: #F4F6F8; --ink: #171A1E; --muted: #5A626B;
+    --line: #E2E6EA; --accent: #0E6E7E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface: #0D1117; --raised: #14181E; --ink: #E6EAF0; --muted: #99A2AD;
+      --line: #232932; --accent: #3DDCFF;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--surface); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; padding: 88px 24px 72px; }
+  a { color: var(--accent); }
+  h1 { font-size: clamp(32px, 7vw, 44px); margin: 0 0 10px; letter-spacing: -0.02em; }
+  .lede { font-size: 20px; color: var(--muted); margin: 0 0 44px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em;
+       color: var(--muted); margin: 44px 0 16px; }
+  p { margin: 0 0 16px; }
+
+  .product {
+    display: flex; gap: 18px; align-items: flex-start;
+    background: var(--raised); border: 1px solid var(--line);
+    border-radius: 12px; padding: 20px; text-decoration: none; color: inherit;
+  }
+  .product:hover { border-color: var(--accent); }
+  .product svg { width: 56px; height: 56px; border-radius: 12px; flex: 0 0 auto; }
+  .product h3 { margin: 0 0 4px; font-size: 18px; }
+  .product p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>June8LLC</h1>
+  <p class="lede">Small, focused software for Android.</p>
+
+  <p>
+    June8LLC is an independent software studio. We build tools that do one thing
+    properly, sell them for a single payment, and collect nothing about the people
+    who use them.
+  </p>
+
+  <h2>What we make</h2>
+
+  <a class="product" href="https://covertrackpad.com">
+    <svg viewBox="0 0 108 108" role="img" aria-label="Cover Screen Trackpad icon">
+      <rect width="108" height="108" fill="#0D1117"/>
+      <path d="M32,30 H76 A8,8 0 0 1 84,38 V70 A8,8 0 0 1 76,78 H32 A8,8 0 0 1 24,70 V38 A8,8 0 0 1 32,30 Z"
+            fill="none" stroke="#6E7885" stroke-width="4.5"/>
+      <path d="M78,71 L60,66 L73,58" fill="none" stroke="#3DDCFF" stroke-opacity="0.45"
+            stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M73,58 L54,50" fill="none" stroke="#3DDCFF" stroke-width="7" stroke-linecap="round"/>
+      <path d="M29,34 L29,55 L35.3,50.1 L38.8,58.5 L42.3,57.1 L38.8,48.7 L46.5,48.7 Z"
+            fill="#FFFFFF" stroke="#0D1117" stroke-width="2.2"/>
+    </svg>
+    <span>
+      <h3>Cover Screen Trackpad</h3>
+      <p>
+        Turns the cover screen of a Samsung foldable into a rear trackpad, so a
+        finger on the back of the phone drives a pointer on the main display.
+      </p>
+    </span>
+  </a>
+
+  <h2>Contact</h2>
+  <p>
+    <a href="mailto:hello@june8llc.com">hello@june8llc.com</a>
+  </p>
+
+  <footer>
+    <p>© 2026 June8LLC.</p>
+  </footer>
+
+</div>
+</body>
+</html>

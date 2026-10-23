@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How to use Clip Ink</title>
-<meta name="description" content="Every Clip Ink gesture on one page: writing, moving the cursor, selecting, editing and sending a note without a keyboard.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'><rect width='108' height='108' rx='22' fill='%23151515'/><path d='M30,64 C36,40 42,40 44,58 C46,72 52,72 56,52 C60,36 66,40 66,56 C66,68 72,70 78,58' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/><path d='M30,76 L78,76' stroke='%23fff' stroke-opacity='0.4' stroke-width='2' stroke-linecap='round'/></svg>">
+<meta name="description" content="Every Clip Ink gesture on one page: writing, moving the cursor, selecting, deleting, sending and drawing, without a keyboard.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'><rect width='108' height='108' rx='22' fill='%230D1117'/><path d='M36,28 H72 A6,6 0 0 1 78,34 V80 A6,6 0 0 1 72,86 H36 A6,6 0 0 1 30,80 V34 A6,6 0 0 1 36,28 Z' fill='none' stroke='%236E7885' stroke-width='4.5'/><path d='M47,22 H61 A3,3 0 0 1 64,25 V30 A3,3 0 0 1 61,33 H47 A3,3 0 0 1 44,30 V25 A3,3 0 0 1 47,22 Z' fill='%230D1117' stroke='%236E7885' stroke-width='4'/><g transform='translate(54 60) scale(0.62) translate(-54 -58)'><path d='M30,64 C36,40 42,40 44,58 C46,72 52,72 56,52 C60,36 66,40 66,56 C66,68 72,70 78,58' fill='none' stroke='%233DDCFF' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/></g></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,39 +22,53 @@
   <p class="lede">One finger writes. More fingers edit. One button sends.</p>
 
   <p class="note">
-    The idea in one line: <strong>moving the cursor keeps you writing; picking up words lets you
-    act on them.</strong> In the app, draw a <kbd>?</kbd> with three fingers to see the short
-    version of this page.
+    New to it? You don&rsquo;t need the gestures to start: <strong>hold the button at the bottom
+    right</strong> for Help, Dictate and New drawing. In the app, Help is also a three-finger
+    <kbd>?</kbd> away. The gestures are for when you want to go faster; the buzzes tell you
+    each one was understood.
   </p>
 
   <h2>Writing</h2>
   <table>
     <tr><th>Do this</th><th>To</th></tr>
-    <tr><td>Write with one finger</td><td>Add text. Each word appears after a short pause.</td></tr>
-    <tr><td>Tap</td><td>Write a dot (or open a drawing you tap on).</td></tr>
+    <tr><td>Write with one finger</td><td>Add text. Each word appears after a short pause (you can set how long).</td></tr>
+    <tr><td>Tap</td><td>Write a dot, even on a drawing.</td></tr>
     <tr><td>Draw <kbd>⅃</kbd> <kbd>&lt;</kbd> <kbd>&gt;</kbd></td><td>New line &middot; backspace &middot; space.</td></tr>
-    <tr><td>Draw <kbd>^</kbd></td><td>Dictate: speak, and it goes in at the cursor.</td></tr>
-    <tr><td>Draw a big box</td><td>Draw a picture into the note.</td></tr>
-    <tr><td>Scribble a zigzag</td><td>Delete the word at the cursor.</td></tr>
-    <tr><td>Strike a line through words</td><td>Delete those words.</td></tr>
+    <tr><td>Draw <kbd>^</kbd></td><td>Dictate. The button lights up as a mic that moves with your voice; tap anywhere to stop.</td></tr>
+    <tr><td>Draw a big box, or hold four fingers still</td><td>Open a new drawing.</td></tr>
   </table>
 
-  <h2>Moving around and selecting</h2>
+  <h2>Moving around</h2>
   <table>
     <tr><th>Do this</th><th>To</th></tr>
-    <tr><td>Hold a word with one finger</td><td>Select it, with handles to adjust and a menu.</td></tr>
-    <tr><td>Put down two fingers, lift one, drag</td><td>Move the cursor, like a trackpad.</td></tr>
-    <tr><td>Drag two fingers together</td><td>Scroll the note.</td></tr>
-    <tr><td>Put down three fingers, lift two, drag</td><td>Select from the cursor.</td></tr>
-    <tr><td>Hold on blank space</td><td>Paste.</td></tr>
-    <tr><td>Scribble a zigzag with three fingers, 3 or more times back and forth</td><td>Clear the page. Three fingers up (undo) brings it back.</td></tr>
-    <tr><td>Write while something is selected</td><td>Replace it with what you write.</td></tr>
-    <tr><td>Tap off a selection</td><td>Let it go; the cursor stays at its end.</td></tr>
+    <tr><td>Swipe one finger straight off an edge</td><td>Move the cursor a letter (&larr; &rarr;) or a line (&uarr; &darr;). Hold at the edge to keep going.</td></tr>
+    <tr><td>Drag two fingers together</td><td>Scroll. The cursor stays on its word.</td></tr>
+    <tr><td>Put down two fingers, lift one, drag</td><td>Move the cursor like a trackpad. Push against the top or bottom to scroll line by line, faster the further you push.</td></tr>
+  </table>
+  <p>A buzz tells you two fingers have landed, and another when you lift one into the trackpad.</p>
+
+  <h2>Selecting</h2>
+  <table>
+    <tr><th>Do this</th><th>To</th></tr>
+    <tr><td>Hold a word</td><td>Select it, with handles to adjust.</td></tr>
+    <tr><td>Hold blank space</td><td>Select the word the cursor is on (or paste, if it isn&rsquo;t on one).</td></tr>
+    <tr><td>Put down three fingers, lift two, drag</td><td>Select from the cursor, a buzz per word.</td></tr>
+    <tr><td>Write over a selection</td><td>Replace it with what you write.</td></tr>
+    <tr><td>Tap off it, or put down two fingers</td><td>Let it go.</td></tr>
   </table>
   <p>
-    The selection menu offers spelling fixes, <strong>Say</strong> (replace the words by speaking),
-    Cut, Copy, Paste and Select all.
+    The bubble over a selection grows with your text. Its top row offers spelling and grammar
+    fixes and the handwriting&rsquo;s other readings of a word (handy when it misread you); its
+    icons are Say (replace by speaking), Cut, Copy, Paste and Select all.
   </p>
+
+  <h2>Deleting and undoing</h2>
+  <table>
+    <tr><th>Do this</th><th>To</th></tr>
+    <tr><td>Draw a line through words, or through and back</td><td>Delete them.</td></tr>
+    <tr><td>Scribble a zigzag over words</td><td>Delete them; a long buzz as the zigzag forms, the delete when you lift. In blank space, it deletes the word at the cursor.</td></tr>
+    <tr><td>Scribble a zigzag with three fingers</td><td>Clear the page, after asking. Three fingers up brings it back.</td></tr>
+  </table>
 
   <h2>Swipe off an edge</h2>
   <table>
@@ -70,23 +84,49 @@
     It starts on the clipboard every time: tap, and the note is copied and you get a fresh page.
   </p>
   <ul>
-    <li><strong>Hold the button</strong> to choose somewhere else: a text message, email, or any
-        app you&rsquo;ve added.</li>
-    <li><strong>Or draw that destination&rsquo;s letter with three fingers</strong>: S for a text,
+    <li><strong>Hold the button</strong> for its list: Help, Dictate and New drawing at the top,
+        then where to send: a text message, email, or any app you&rsquo;ve added.</li>
+    <li><strong>Or draw a destination&rsquo;s letter with three fingers</strong>: S for a text,
         E for email, C for the clipboard. The button changes; nothing is sent until you tap it.</li>
-    <li>To add an app or change the letters, open the help (three-finger <kbd>?</kbd>) and tap
-        <strong>Gesture mapping</strong>.</li>
     <li>Sending to an app opens it with your note filled in, then Clip Ink clears the note and
         closes, ready for the next one. The text is on your clipboard too, in case you change
-        your mind. Email and apps with a subject or title get &ldquo;Clip
-        Ink&rdquo; and the date and time there.</li>
+        your mind. Email and apps with a subject or title get &ldquo;Clip Ink&rdquo; and the date
+        and time there.</li>
+    <li>Hold an empty page to start a note from whatever is on the clipboard.</li>
   </ul>
+
+  <h2>Drawing</h2>
+  <p>
+    Like a screen-off memo: a black page and your finger. Hold a drawing in your note to open it
+    again. Opening and closing the drawing page gives a double buzz.
+  </p>
+  <table>
+    <tr><th>Do this</th><th>To</th></tr>
+    <tr><td>One finger</td><td>Draw, or erase.</td></tr>
+    <tr><td>Two fingers</td><td>Pinch to zoom in (up to 10&times;) for detail; drag to move around.</td></tr>
+    <tr><td>Three fingers &uarr; &darr; &larr; &rarr;</td><td>Undo &middot; redo &middot; pen &middot; eraser.</td></tr>
+    <tr><td>Four fingers held on an empty page</td><td>Back to writing.</td></tr>
+    <tr><td>The pen button</td><td>Slide up for a colour, then right for the thickness.</td></tr>
+    <tr><td>The eraser button</td><td>Tap it on or off; drag right to size it.</td></tr>
+    <tr><td><kbd>✕</kbd> &middot; <kbd>✓</kbd></td><td>Discard &middot; put the drawing in the note.</td></tr>
+  </table>
+
+  <h2>Settings</h2>
+  <p>
+    From Help, tap <strong>Settings</strong>: text size; cursor and scroll speed; how long to wait
+    before writing turns into text; when the page fades while idle; how far drawings zoom;
+    colour pairs for the text and the handwriting; whether to ask before clearing the page; which
+    shortcuts the button&rsquo;s list shows; the three-finger letters (Gesture mapping); and
+    <strong>Report a problem</strong>.
+  </p>
 
   <h2>Tips</h2>
   <ul>
     <li>The first launch downloads the handwriting model, so do it once with a connection.</li>
     <li>On the cover screen, open Clip Ink from your cover widgets or launcher. Reopening it from
         the cover&rsquo;s recent apps may ask you to open the phone; that&rsquo;s Samsung&rsquo;s rule.</li>
+    <li>Whichever way the cover&rsquo;s screen-size button is set, Clip Ink keeps clear of the
+        cameras, so you always write in the same space.</li>
     <li>Pictures you draw can be copied as one image of the whole note, or left out to copy just
         the text.</li>
   </ul>
